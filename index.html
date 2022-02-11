@@ -3,9 +3,10 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/589f40fe56.js" crossorigin="anonymous"></script>
 <style media="all"> 
+
 .desktop-display {
   display:none;
 }
@@ -22,7 +23,7 @@
   color: white;
   font-weight: 900;
   font-size: 45px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 #mobile-subtitle {
@@ -33,7 +34,7 @@
   color: #349ad3;
   font-weight: 400;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 @media (min-width:700px) {
@@ -49,6 +50,7 @@
 
 body {
   background: linear-gradient(90deg, rgba(155,218,242,1) 0%, rgba(220,217,176,1) 100%) fixed;
+  font-family: 'Prompt', sans-serif;
 }
 
 #head {
@@ -57,39 +59,35 @@ body {
 }
 
 #walletButton{
-  width: 150px;
-  height: 40px;
-  margin: auto;
-  background-color: white;
-  border: none;
-  color: #349ad3;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 50px;
-  margin-right: 10px;
-  font-weight: 600;
-}
+    width: 150px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 500;
+  }
 
 #menuButton {
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  background-color: white;
-  border: none;
-  color: #4f99cf;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-top: 50px;
-  margin-right: 50px;
-  font-weight: 600;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: 500;
 }
 
 #mainContainer {
@@ -100,9 +98,9 @@ body {
 }
 
 #menu {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: white;
-  border-radius: 5px;
+  border-radius: 3px;
   width: 200px;
   display: table;
   text-align: left;
@@ -137,24 +135,6 @@ body {
   width: 470px;
 }
 
-#image10div {
-  display: table;
-  text-align: left;
-  margin: 10.5% 12%;
-  position: absolute; /*Can also be `fixed`*/
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  /*Solves a problem in which the content is being cut when the div is smaller than its' wrapper:*/
-  overflow: auto;
-  padding: 15px;
-}
-
-#image10 {
-  width: 150px;
-}
-
 #image16div {
   display: table;
   text-align: left;
@@ -169,11 +149,11 @@ body {
 }
 
 #image16 {
-  width: 150px;
+  width: 100px;
 }
 
 #feedback {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: white;
   border-radius: 7px;
   width: 400px;
@@ -192,12 +172,12 @@ body {
 }
 
 #content {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: white;
   border-radius: 7px;
   width: 400px;
   display: table;
-  margin: auto;
+  margin: 200px auto;
   text-align: center;
   position: fixed; /*Can also be `fixed`*/
   left: 0;
@@ -211,7 +191,7 @@ body {
 }
 
 #transactions {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: white;
   border-radius: 7px;
   width: 800px;
@@ -231,7 +211,7 @@ body {
 }
 
 #dashboard {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Prompt', sans-serif;
   background-color: white;
   border-radius: 7px;
   width: 750px;
@@ -264,7 +244,7 @@ input {
 }
 #bckgrnd,
 .labels {
-  width: 88px;
+  width: 176px;
   height: 24px;
   text-align: center;
   display: inline-block;
@@ -287,41 +267,36 @@ input {
   transition: transform 0.5s ease-in-out;
 }
 #rad2:checked ~ #bckgrnd {
-  transform: translateX(88px);
-  transition: transform 0.5s ease-in-out;
-}
-#rad3:checked ~ #bckgrnd {
   transform: translateX(176px);
-  transition: transform 0.5s ease-in-out;
-}
-#rad4:checked ~ #bckgrnd {
-  transform: translateX(264px);
   transition: transform 0.5s ease-in-out;
 }
 
 .btcInput {
-  border-radius: 6px;
+  border-radius: 2px;
   display: block;
   margin:auto;
   width: 350px;
   height: 40px;
   font-size: 30px;
+  border: 1px solid lightgray;
 }
 
 .addressInput {
-  border-radius: 6px;
+  border-radius: 2px;
   display: block;
   margin:auto;
   width: 350px;
   height: 30px;
   font-size: 15px;
+  border: 1px solid lightgray;
 }
 
 .title {
   text-align: center;
   color: #349ad3;
-  font-weight: 600;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-family: 'Prompt', sans-serif;
+  font-size: 13px;
 }
 
 .transactionTitle {
@@ -351,6 +326,7 @@ input {
 }
 
 .mainButton {
+  font-family: 'Prompt', sans-serif;
   width: 350px;
   height: 40px;
   margin: auto;
@@ -369,13 +345,14 @@ input {
 .menuButton {
   width: 200px;
   height: 40px;
-  margin: auto;
+  margin: 2px;
   background-color: white;
   border: none;
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 12px;
+  color: gray;
   font-weight: 500;
   cursor: pointer;
   border-radius: 5px;
@@ -384,13 +361,13 @@ input {
 .menuButtonClicked {
   width: 200px;
   height: 40px;
-  margin: auto;
-  background-color: #9ad9f2;
+  margin: 2px;
+  background-color: #dadbdf;
   border: none;
   text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 5px;
@@ -401,6 +378,11 @@ input {
   color: white;
 }
 
+
+.menuUpHr {
+  width: 350px;
+  border: 1px solid #9ad9f2;
+}
 
 .menuHr {
   width: 350px;
@@ -444,11 +426,14 @@ th, td {
 <body>
   <div class="desktop-display">
     <div id="head">
-      <button type="button" id="walletButton">Connect Wallet</button>
-      <button type="button" id="menuButton"><i class="fas fa-bars"></i></button>
+        <button type="button" id="walletButton">Connect Wallet</button>
+        <button type="button" id="menuButton"><i class="fa-regular fa-circle-question"></i></button>
+        <button type="button" id="menuButton"><i class="fas fa-bars"></i></button>
+        <button type="button" id="menuButton"><i class="fa-solid fa-sun"></i></button>
     </div>
     <div id="mainContainer">
         <div id="menu">
+          <img src="image15.png" id="image16">
           <button type="button" class="menuButtonClicked" id="menuButton1" onclick="bridge()"><i class="fas fa-sync-alt"></i>&emsp;Bridge</button><br>
           <button type="button" class="menuButton" id="menuButton2" onclick="transactions()"><i class="fas fa-clipboard-list"></i>&emsp;Transactions</button><br>
           <button type="button" class="menuButton" id="menuButton3" onclick="dashboard()"><i class="fas fa-chart-line"></i>&emsp;Dashboard</button>
@@ -460,7 +445,7 @@ th, td {
           <iframe width="700" height="525" src="https://datastudio.google.com/embed/reporting/4cb333f9-39bf-448b-8d2d-f7ac3f44ad5d/page/FyZjC" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
         <div id="transactions" style="display: none">
-          <p class="transactionTitle">Issue Requests</p>
+          <p class="transactionTitle">Wrap Requests</p>
           <table>
             <tr>
               <th>Updated</th>
@@ -470,7 +455,7 @@ th, td {
               <th>Status</th>
             </tr>
           </table><br>
-          <p class="transactionTitle">Redeem Requests</p>
+          <p class="transactionTitle">Unwrap Requests</p>
           <table>
             <tr>
               <th>Updated</th>
@@ -484,17 +469,13 @@ th, td {
         <div id="content">
           <div id="radios">
             <input id="rad1" type="radio" name="radioBtn" onchange="hideA(this)" checked>
-            <label class="labels" for="rad1">ISSUE</label>
+            <label class="labels" for="rad1">WRAP</label>
             <input id="rad2" type="radio" name="radioBtn" onchange="hideB(this)">
-            <label class="labels" for="rad2">REDEEM</label>
-            <input id="rad3" type="radio" name="radioBtn" onchange="hideC(this)">
-            <label class="labels" for="rad3">TRANSFER</label>
-            <input id="rad4" type="radio" name="radioBtn" onchange="hideD(this)">
-            <label class="labels" for="rad4">BURN</label>
+            <label class="labels" for="rad2">UNWRAP</label>
             <div id="bckgrnd"></div>
           </div>
-          <hr class="menuHr">
-          <div id="ISSUE">
+          <hr class="menuUpHr">
+          <div id="WRAP">
             <p class="title">Mint anetaBTC by Wrapping BTC</p>  
             <input type="text" class="btcInput" size="30" required>
             <div class="flex-container">
@@ -507,12 +488,12 @@ th, td {
             </div>
             <hr class="menuHr">
             <div class="flex-container">
-              <div class="left">You will receive</div>
+              <div class="left">You Will receive</div>
               <div class="right"><b>0</b> anetaBTC</div>
             </div>
             <button type="button" class="mainButton" id="mintButton">Connect Wallet</button>
           </div>
-          <div id="REDEEM" style="display:none">
+          <div id="UNWRAP" style="display:none">
             <p class="title">Redeem anetaBTC 1:1 for BTC</p>  
             <input type="text" class="btcInput" size="30" required><br>
             <label id="addressLabel" for="addressBTC">BTC Address</label><br>
@@ -527,31 +508,10 @@ th, td {
             </div>
             <hr class="menuHr">
             <div class="flex-container">
-              <div class="left">You will receive</div>
+              <div class="left">You Will receive</div>
               <div class="right"><b>0</b> BTC</div>
             </div>
             <button type="button" class="mainButton" id="connectButton1">Connect Wallet</button>
-          </div>
-          <div id="TRANSFER" style="display:none">
-            <p class="title">Transfer anetaBTC</p>  
-            <input type="text" class="btcInput" size="30" required><br>
-            <label id="addressLabel" for="addressBTC">Recipient</label><br>
-            <input type="text" name="addressBTC" class="addressInput" size="30" placeholder="Enter recipient address" required>
-            <button type="button" class="mainButton" id="connectButton2">Connect Wallet</button>
-          </div>
-          <div id="BURN" style="display:none">
-            <p class="title">Burn anetaBTC in exchange for DOT</p>  
-            <input type="text" class="btcInput" size="30" required>
-            <div class="flex-container">
-              <div class="left">DOT earned</div>
-              <div class="right"><b>0</b> DOT</div>
-            </div>
-            <hr class="menuHr">
-            <div class="flex-container">
-              <div class="left">You will receive</div>
-              <div class="right"><b>0</b> DOT</div>
-            </div>
-            <button type="button" class="mainButton" id="connectButton3">Connect Wallet</button>
           </div>
         </div>
         <div id="feedback" style="display: none">
@@ -565,17 +525,14 @@ th, td {
         <div id="image6div">
           <img src="image6.png" id="image6">
         </div>
-        <div id="image10div">
-          <img src="image10.png" id="image10">
-        </div>
         <div id="image16div">
-          <img src="image16.png" id="image16">
+          <img src="image15.png" id="image16">
         </div>
     </div>
   </div>
   <div class="mobile-display">
     <div id="image16div">
-      <img src="image16.png" id="image16">
+      <img src="image15.png" id="image16">
     </div>
     <p class="mobile-title">Mobile version is under construction <br> <span id="mobile-subtitle">Visit the desktop version of our site using Google Chrome browser</span></p>
   </div>
@@ -583,39 +540,17 @@ th, td {
 <script type="text/javascript">
   function hideA(x) {
    if (x.checked) {
-     document.getElementById("REDEEM").style.display = "none";
-     document.getElementById("TRANSFER").style.display = "none";
-     document.getElementById("BURN").style.display = "none";
-     document.getElementById("ISSUE").style.display = "initial";
+     document.getElementById("UNWRAP").style.display = "none";
+     document.getElementById("WRAP").style.display = "initial";
    }
  }
 
  function hideB(x) {
    if (x.checked) {
-     document.getElementById("REDEEM").style.display = "initial";
-     document.getElementById("TRANSFER").style.display = "none";
-     document.getElementById("BURN").style.display = "none";
-     document.getElementById("ISSUE").style.display = "none";
+     document.getElementById("UNWRAP").style.display = "initial";
+     document.getElementById("WRAP").style.display = "none";
    }
- }
-
-  function hideC(x) {
-   if (x.checked) {
-     document.getElementById("REDEEM").style.display = "none";
-     document.getElementById("TRANSFER").style.display = "initial";
-     document.getElementById("BURN").style.display = "none";
-     document.getElementById("ISSUE").style.display = "none";
-   }
- }
-
-   function hideD(x) {
-   if (x.checked) {
-     document.getElementById("REDEEM").style.display = "none";
-     document.getElementById("TRANSFER").style.display = "none";
-     document.getElementById("BURN").style.display = "initial";
-     document.getElementById("ISSUE").style.display = "none";
-   }
- }  
+ } 
 
   function dashboard() {
     document.getElementById("content").style.display = "none";
