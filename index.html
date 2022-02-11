@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="/path/to/box-shadows.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -151,6 +152,22 @@ body {
 #image16 {
   width: 100px;
 }
+
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, 15px); }
+  100% { transform: translate(0, -0px); }
+}
+
 
 #feedback {
   font-family: 'Prompt', sans-serif;
@@ -440,7 +457,7 @@ th, td {
           <button type="button" class="menuButton" id="menuButton3" onclick="dashboard()"><i class="fas fa-chart-line"></i>&emsp;Dashboard</button>
           <hr>
           <button type="button" class="menuButton" id="menuButton4" onclick="feedback()"><i class="fas fa-comment-dots"></i>&emsp;Feedback</button>
-          <button type="button" class="menuButton" id="menuButton5"><i class="fas fa-book-open"></i>&emsp;Docs</button>
+          <button type="button" class="menuButton" id="menuButton5"><i class="fas fa-book-open"></i>&emsp;Docs&emsp;<i class="fa-solid fa-arrow-up-right-from-square"></i></button>
           <p style="text-align: center; color: #9ad9f2;"><i class="fab fa-twitter"></i>&emsp;&emsp;<i class="fab fa-discord"></i>&emsp;&emsp;<i class="fab fa-telegram"></i>&emsp;&emsp;<i class="fab fa-github"></i></p>
         </div>
         <div id="dashboard" style="display: none">
@@ -522,7 +539,7 @@ th, td {
           <button class="feedbackButton">Discuss os Discord&emsp;<i class="fab fa-discord"></i></button>
           <button class="feedbackButton">Discuss on Telegram&emsp;<i class="fab fa-telegram"></i></button>
         </div>
-        <div id="image6div">
+        <div id="image6div" class="floating">
           <img src="image6.png" id="image6">
         </div>
         <div id="image16div">
